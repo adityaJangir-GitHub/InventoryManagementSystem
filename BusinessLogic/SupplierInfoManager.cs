@@ -1,8 +1,10 @@
-﻿namespace InventoryManagementSystem
+﻿using InventoryManagementSystem.UserInterface;
+
+namespace InventoryManagementSystem
 {
     public class SupplierInfoManager : IProductSupplier
     {
-        public void AddInfo()
+        public void AddInfo(Details details)
         {
 
         }

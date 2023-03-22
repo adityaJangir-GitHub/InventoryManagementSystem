@@ -1,4 +1,6 @@
-﻿namespace InventoryManagementSystem
+﻿using System.Xml.Linq;
+
+namespace InventoryManagementSystem
 {
     public class InventoryOperations
     {
@@ -14,7 +16,8 @@
             {
                 case OperationList.add:
                     {
-                        manager.AddInfo();
+                        var userInfo = InventoryOperationsHelpers.DisplayInfoField();
+                        manager.AddInfo(userInfo);
                         break;
                     }
                 case OperationList.remove:

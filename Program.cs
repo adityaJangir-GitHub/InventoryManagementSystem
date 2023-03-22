@@ -4,8 +4,7 @@ using InventoryManagementSystem;
 ChoiceDisplay.DisplayManagingChoices();
 Console.Write("Enter your choice: ");
 
-var InputValue = 0;
-var InputResponce = int.TryParse(Console.ReadLine(), out InputValue);
+var InputResponce = int.TryParse(Console.ReadLine(), out var InputValue);
 
 
 if (InputResponce)
